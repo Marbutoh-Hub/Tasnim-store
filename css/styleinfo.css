@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Sorts+Mill+Goudy&display=swap");
+
+body {
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+#main-container {
+  margin: 2px 2px;
+  padding: 10px;
+}
+
+#container {
+  border: 2px solid black;
+  width: 100%;
+  background-color: rgb(252, 224, 247);
+  border-radius: 15px;
+  width: 60%;
+  margin: 10px auto;
+  border-radius: 15px;
+}
+.header {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#super-admin-img,
+#title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#super-admin-img > img {
+  width: 20%;
+  border-radius: 150px;
+}
+#title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#title,
+h3,
+h6 {
+  margin-top: 20px;
+  color: black;
+}
+.content {
+  padding: 10px;
+  margin-top: 50px;
+  background-color: rgba(160, 170, 241, 0.564);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.section > p {
+  padding: 20px;
+}
+.contact {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+#whatsapp,
+#email,
+#telephone {
+  border: 1px solid black;
+  padding: 10px;
+}
+.footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+}
+
+.footer > a {
+  padding: 12px;
+  width: 100px;
+  border-radius: 15px;
+  text-decoration: none;
+  background-color: rgb(40, 19, 143);
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+}
+
+#whatsapp,
+#email,
+#telephone {
+  width: 100px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+span {
+  margin-left: 10px;
+}
+
+#whatsapp > a {
+  text-decoration: none;
+  color: black;
+}
+#email > a {
+  text-decoration: none;
+  color: black;
+}
+#telephone > a {
+  text-decoration: none;
+}
+
+.footer > a:hover {
+  color: whitesmoke;
+}
+
+#whatsapp,
+#email,
+#telephone > a:hover {
+  color: black;
+}
+@media only screen and (max-width: 600px) {
+  #container {
+    width: 100%;
+    border: none;
+  }
+
+  .content {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  #main-container {
+    background-color: rgb(252, 224, 247);
+    height: 100%;
+  }
+
+  .section > p {
+    text-align: justify;
+    text-indent: 0.2in;
+  }
+  #super-admin-img > img {
+    width: 150px;
+  }
+  body {
+    overflow-y: hidden;
+  }
+
+  span {
+    margin-left: 10px;
+  }
+
+  #whatsapp,
+  #email,
+  #telephone {
+    width: 50px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}

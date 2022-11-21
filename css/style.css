@@ -1,0 +1,106 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Sorts+Mill+Goudy&display=swap");
+
+* {
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+#main-container {
+  /* border: 2px solid black; */
+  margin: 1px 2px;
+  padding: 10px;
+}
+
+.form-login {
+  /* border: 2px solid black; */
+  width: 30%;
+  margin: 10px auto;
+}
+.header-login {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.title-login {
+  border: 2px solid rgb(178, 194, 242);
+  border-radius: 15px;
+  font-family: "Fredoka One", cursive;
+  text-align: center;
+  padding: 10px;
+}
+.content-login {
+  background-color: rgb(220, 221, 250);
+  border: 2px solid rgb(220, 221, 250);
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+#text-admin {
+  font-size: 1.5rem;
+  color: rgb(187, 134, 221);
+}
+
+#input-login {
+  display: flex;
+  flex-direction: column;
+}
+#input-login > div {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Sorts Mill Goudy", serif;
+}
+#input-login > div > input {
+  border: 0.5px solid black;
+  border-radius: 8px;
+  padding: 2px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#input-login > button {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 8px;
+  border-radius: 9px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: white;
+  border: 0.5px solid rgb(104, 42, 226);
+  background-color: rgb(104, 42, 226);
+}
+.footer {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header-footer {
+  border: 0.5px solid black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+}
+
+.header-footer > a {
+  text-decoration: none;
+}
+.footer-footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-login {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
