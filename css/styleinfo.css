@@ -13,16 +13,14 @@ body {
 }
 
 #container {
-  border: 2px solid black;
   width: 100%;
-  background-color: rgb(252, 224, 247);
+  background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
   border-radius: 15px;
   width: 60%;
   margin: 10px auto;
   border-radius: 15px;
 }
 .header {
-  /* border: 2px solid black; */
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -70,8 +68,8 @@ h6 {
 #whatsapp,
 #email,
 #telephone {
-  border: 1px solid black;
   padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .footer {
   margin-top: 20px;
@@ -85,8 +83,9 @@ h6 {
   width: 100px;
   border-radius: 15px;
   text-decoration: none;
-  background-color: rgb(40, 19, 143);
-  color: whitesmoke;
+  background-color: rgba(160, 170, 241, 0.564);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  color: black;
   display: flex;
   justify-content: center;
 }
@@ -139,7 +138,7 @@ span {
   }
 
   #main-container {
-    background-color: rgb(252, 224, 247);
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
     height: 100%;
   }
 
