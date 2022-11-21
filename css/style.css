@@ -1,4 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Sorts+Mill+Goudy&display=swap");
 
 * {
@@ -9,9 +8,13 @@
 }
 
 #main-container {
-  /* border: 2px solid black; */
+  border: 2px solid black;
   margin: 1px 2px;
-  padding: 10px;
+  /* padding: 10px; */
+}
+.icon {
+  width: 20px;
+  height: 20px;
 }
 
 .form-login {
@@ -97,6 +100,102 @@
   text-align: center;
   font-size: 0.8rem;
 }
+
+/* CSS Dashboard */
+.dashboard-main {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+}
+
+.side-left {
+  border: 2px solid black;
+  /* height: 500px; */
+  flex-grow: 0.3;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-dashboard {
+  border: 2px solid black;
+  flex-grow: 2;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+.header-dashboard {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+  width: 100%;
+  padding: 5px;
+}
+.header-dashboard > img {
+  /* border: 2px solid black; */
+  width: 21%;
+  height: 55px;
+}
+.header-dashboard > h3 {
+  /* border: 2px solid black; */
+  width: 75%;
+  height: 55px;
+  line-height: 55px;
+  padding-left: 10px;
+  color: rgb(188, 80, 212);
+  font-family: "Fredoka One", cursive;
+  font-size: 1.5rem;
+}
+.nav-menu {
+  border: 2px solid black;
+  flex-grow: 5;
+  padding: 30px;
+  box-sizing: border-box;
+}
+#list {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+}
+dl > dt {
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid black; */
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+dl > dt > a {
+  font-family: "Fredoka One", cursive;
+  font-weight: 100;
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgb(77, 75, 75);
+  padding-left: 30px;
+}
+
+dl > dt > a:hover {
+  color: black;
+}
+.footer-dashboard {
+  border: 2px solid black;
+  flex-grow: 3;
+}
+.dashboard-component {
+  border: 2px solid black;
+  flex-grow: 7;
+}
+
+.side-right {
+  border: 2px solid black;
+  flex-grow: 3;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+/* CSS Dashboard End */
 
 @media only screen and (max-width: 600px) {
   .form-login {
