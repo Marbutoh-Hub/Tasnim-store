@@ -11,27 +11,27 @@
                 <dl id="list">
                     <dt>
                        <img class="icon" src="icon/dashboard.svg" alt="">
-                       <a href="#">Dashboard</a>
+                       <a id="dashboard" href="#">Dashboard</a>
                     </dt>
                     <dt>
                         <img class="icon" src="icon/master.svg" alt="">
-                        <a href="#">Master</a>
+                        <a id="master" href="#">Master</a>
                     </dt>
                     <dt>
                         <img class="icon" src="icon/customer.svg" alt="">
-                        <a href="#">Customer</a>
+                        <a id="customer" href="#">Customer</a>
                     </dt>
                     <dt>
                         <img class="icon" src="icon/product.svg" alt="">
-                        <a href="#">Produk</a>   
+                        <a id="produk" href="#">Produk</a>   
                     </dt>
                     <dt>
                         <img class="icon" src="icon/transaksi.svg" alt="">
-                        <a href="#">Transaksi</a>
+                        <a id="transaksi" href="#">Transaksi</a>
                     </dt>
                     <dt>
                         <img class="icon" src="icon/laporan.svg" alt="">
-                        <a href="#">Laporan</a>
+                        <a id="laporan" href="#">Laporan</a>
                     </dt>
                 </dl>
             </div>
@@ -46,3 +46,19 @@
         </div>
     </div>
 </div>
+
+<script>
+    let targetSelected;
+
+    $("dl dt a").on('click',function(e){
+        this.targetSelect = e.target.id;
+        idList = $("dl dt a");
+        for (let index = 0; index < idList.length; index++) {
+            if (idList[index].id === this.targetSelect) {
+                $('#'+idList[index].id).css('color','blue');
+            }else{
+                $('#'+idList[index].id).css('color','black');
+            }
+        }
+    });
+</script>
