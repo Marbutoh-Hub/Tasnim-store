@@ -10,27 +10,27 @@
             <div class="nav-menu">
                 <dl id="list">
                     <dt>
-                       <img class="icon" src="icon/dashboard.svg" alt="">
+                       <img class="icon dashboard-icon" src="icon/dashboard.svg" alt="">
                        <a id="dashboard" href="#">Dashboard</a>
                     </dt>
                     <dt>
-                        <img class="icon" src="icon/master.svg" alt="">
+                        <img class="icon master-icon" src="icon/master.svg" alt="">
                         <a id="master" href="#">Master</a>
                     </dt>
                     <dt>
-                        <img class="icon" src="icon/customer.svg" alt="">
+                        <img class="icon customer-icon" src="icon/customer.svg" alt="">
                         <a id="customer" href="#">Customer</a>
                     </dt>
                     <dt>
-                        <img class="icon" src="icon/product.svg" alt="">
+                        <img class="icon produk-icon" src="icon/product.svg" alt="">
                         <a id="produk" href="#">Produk</a>   
                     </dt>
                     <dt>
-                        <img class="icon" src="icon/transaksi.svg" alt="">
+                        <img class="icon transaksi-icon" src="icon/transaksi.svg" alt="">
                         <a id="transaksi" href="#">Transaksi</a>
                     </dt>
                     <dt>
-                        <img class="icon" src="icon/laporan.svg" alt="">
+                        <img class="icon laporan-icon" src="icon/laporan.svg" alt="">
                         <a id="laporan" href="#">Laporan</a>
                     </dt>
                 </dl>
@@ -49,15 +49,26 @@
 
 <script>
     let targetSelected;
-
     $("dl dt a").on('click',function(e){
-        this.targetSelect = e.target.id;
-        idList = $("dl dt a");
+        this.targetSelect   = e.target.id;
+        idList              = $("dl dt a");
+        imgList             = $("dl dt img");
+        imgSelected         = this.targetSelect+"-icon";
+        console.log(imgSelected);
         for (let index = 0; index < idList.length; index++) {
             if (idList[index].id === this.targetSelect) {
-                $('#'+idList[index].id).css('color','blue');
+                $('#'+idList[index].id).css('color','blue');    
             }else{
                 $('#'+idList[index].id).css('color','black');
+            }
+        }
+
+        for (let index = 0; index < imgList.length; index++) {
+            console.log(imgList[index].classList[1])
+            if (imgList[index].classList[1] === imgSelected) {
+                $('.'+imgList[index].classList[1]).css('backgroundColor','blue');  
+            }else{
+                $('.'+imgList[index].classList[1]).css('backgroundColor','white');  
             }
         }
     });
