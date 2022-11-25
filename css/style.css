@@ -195,6 +195,22 @@ dl > dt > a:hover {
   flex-direction: column;
 }
 
+#master-detail {
+  margin-left: 21px;
+  transition: 1s;
+  display: none;
+}
+#master-detail > ul > li {
+  list-style: none;
+  font-family: "Fredoka One", cursive;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+#master-detail > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
 /* CSS Dashboard End */
 
 @media only screen and (max-width: 600px) {
