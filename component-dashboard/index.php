@@ -65,9 +65,10 @@
             if (idList[index].id === this.targetSelect) {
                 $('#' + idList[index].id).css('color', '#FF00FF');
                 if (idList[index].id === 'master') {
-                    $('#master-detail').toggle();
+                    $('#master-detail').toggle(500);
+
                 } else {
-                    $('#master-detail').hide();
+                    $('#master-detail').hide(500);
                 }
             } else {
                 $('#' + idList[index].id).css('color', 'black');

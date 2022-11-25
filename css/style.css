@@ -196,15 +196,17 @@ dl > dt > a:hover {
 }
 
 #master-detail {
-  margin-left: 21px;
-  transition: 1s;
   display: none;
+  width: 150px;
+  margin-left: 21px;
 }
+
 #master-detail > ul > li {
   list-style: none;
   font-family: "Fredoka One", cursive;
   font-size: 0.8rem;
   margin-bottom: 10px;
+  width: 150px;
 }
 #master-detail > ul > li > a {
   text-decoration: none;
