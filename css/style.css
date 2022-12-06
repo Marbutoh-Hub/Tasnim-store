@@ -131,7 +131,7 @@
   padding: 5px;
 }
 .header-dashboard > img {
-  /* border: 2px solid black; */
+  border: 2px solid black;
   width: 21%;
   height: 55px;
 }
@@ -146,7 +146,7 @@
   font-size: 1.5rem;
 }
 .nav-menu {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   flex-grow: 5;
   padding: 30px;
   box-sizing: border-box;
@@ -177,12 +177,63 @@ dl > dt > a:hover {
   color: black;
 }
 .footer-dashboard {
-  border: 2px solid black;
+  border: 2px solid rgb(86, 4, 4);
   flex-grow: 3;
+  padding: 10px;
 }
 .dashboard-component {
   border: 2px solid black;
   flex-grow: 7;
+}
+
+#notes {
+  display: flex;
+  flex-direction: column;
+}
+
+#notif-notes > button {
+  display: flex;
+  justify-content: space-between;
+}
+.notif-notes img {
+  width: 20px;
+  height: 20px;
+  /* border: 2px solid black; */
+}
+#modal-notes {
+  top: 0;
+  left: 0;
+  border: 6px solid black;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-notes {
+  display: flex;
+  /* border: 3px solid rgb(16, 16, 16); */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  flex-direction: column;
+  margin-top: 8%;
+  background: white;
+  width: 40%;
+  padding: 15px;
+  border-radius: 5px;
+}
+.header-notes {
+  padding: 5px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 8px;
+  background-color: rgb(230, 227, 186);
+}
+.content-notes {
+  padding: 10px;
 }
 
 .side-right {
