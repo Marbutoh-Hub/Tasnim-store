@@ -5,6 +5,9 @@
                 <div class="header-dashboard">
                     <img src="images/logo-login.png" alt="">
                     <h3>Tasnim Store</h3>
+                    <div id="burger">
+                        <img src="icon/icon-hamburger-menu.svg" alt="" id="burger-on">
+                    </div>
                 </div>
             </div>
             <div class="nav-menu">
@@ -51,30 +54,25 @@
                             New notes
                         </button>
                     </div>
-                    <div class="list-notes">
-                        <div class="list-group mt-2" id="notif-notes">
-                            <button type="button" class="list-group-item list-group-item-action">
-                                A second item
-                                <span class="notif-notes">
-                                    <img src="icon/notif-icon.svg" alt="">
-                                    <!-- <img src="icon/icon-check-notif.svg" alt=""> -->
-                                </span>
-                            </button>
-                            <button type="button" class="list-group-item list-group-item-action">
-                                A second item 2
-                                <span class="notif-notes">
-                                    <!-- <img src="icon/notif-icon.svg" alt=""> -->
-                                    <img src="icon/icon-check-notif.svg" alt="">
-                                </span>
-                            </button>
-                            <button type="button" class="list-group-item list-group-item-action">
-                                A third button item
-                                <span class="notif-notes">
-                                    <!-- <img src="icon/notif-icon.svg" alt=""> -->
-                                    <img src="icon/icon-check-notif.svg" alt="">
-                                </span>
-                            </button>
-                        </div>
+                    <div class="list-group" id="notif-notes">
+                        <button type="button" class="list-group-item list-group-item-action">
+                            A second item
+                            <span class="notif-notes">
+                                <img src="icon/notif-icon.svg" alt="">
+                            </span>
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action">
+                            A second item 2
+                            <span class="notif-notes">
+                                <img src="icon/icon-check-notif.svg" alt="">
+                            </span>
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action">
+                            A third button item
+                            <span class="notif-notes">
+                                <img src="icon/icon-check-notif.svg" alt="">
+                            </span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -101,7 +99,7 @@
                     <div class="col-auto">
                         <label for="tanggal_notes" class="col-form-label">Tanggal</label>
                     </div>
-                    <div class="col-auto">
+                    <div class="col-auto" id="tanggal_n">
                         <input type="date" id="tanggal_notes" class="form-control form-control-sm">
                     </div>
                 </div>
@@ -127,7 +125,8 @@
 <script>
     $(document).ready(function() {
         $('#modal-notes').hide();
-    })
+    });
+
     let targetSelected;
     let masterSelected;
 
@@ -156,10 +155,10 @@
                 $('#' + idList[index].id).css('color', '#BA55D3');
                 if (idList[index].id === 'master') {
                     $('#master-detail').toggle(500);
-                    $('.list-notes').toggle(500);
+                    $('#notif-notes').toggle(500);
                 } else {
                     $('#master-detail').hide(500);
-                    $('.list-notes').show(500);
+                    $('#notif-notes').fadeIn(500);
                 }
             } else {
                 $('#' + idList[index].id).css('color', 'black');
@@ -187,5 +186,10 @@
     });
     $('#cancel-modal').click(function() {
         $('#modal-notes').fadeOut("slow");
+    });
+
+    // javascript mobile mode
+    $('#burger-on').on('click', function() {
+        $('.nav-menu').toggle(500);
     });
 </script>
