@@ -46,7 +46,7 @@
                 </dl>
             </div>
             <div class="footer-dashboard">
-                <div id="notes">
+                <div id="notes" class="mt-2">
                     <h6>Create notes :</h6>
                     <div class="d-grid gap-2 section-notes">
                         <button style="padding:8px; text-align:left; color:black; " type="button" id="button-notes" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -77,8 +77,7 @@
                 </div>
             </div>
         </div>
-        <div class="dashboard-component">
-
+        <div class="component-main">
         </div>
         <div class="side-right">
 
@@ -125,6 +124,8 @@
 <script>
     $(document).ready(function() {
         $('#modal-notes').hide();
+        $("title").text('Dashboard')
+        $(".component-main").load("./view/component-dashboard/index.php");
     });
 
     let targetSelected;
@@ -158,7 +159,7 @@
                     $('#notif-notes').toggle(500);
                 } else {
                     $('#master-detail').hide(500);
-                    $('#notif-notes').fadeIn(500);
+                    $('#notif-notes').show(500);
                 }
             } else {
                 $('#' + idList[index].id).css('color', 'black');

@@ -20,7 +20,7 @@
   <script>
     $(document).ready(function() {
       $("title").text('Login Tasnim Store')
-      $("#main-container").load("component-login/index.php");
+      $("#main-container").load("view/component-login/index.php");
     });
   </script>
 </body>

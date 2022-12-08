@@ -12,6 +12,10 @@
   margin: 1px 2px;
   /* padding: 10px; */
 }
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
 .icon {
   width: 20px;
   height: 20px;
@@ -105,6 +109,7 @@
 .dashboard-main {
   display: flex;
   flex-direction: row;
+  /* background-color: rgb(198, 109, 225); */
   /* border: 2px solid black; */
 }
 
@@ -112,8 +117,11 @@
   /* border: 2px solid black; */
   /* height: 500px; */
   /* flex-grow: 0.3; */
+  background-color: rgba(11, 16, 147, 0.197);
   display: flex;
   flex-direction: column;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .icon-dashboard {
@@ -129,6 +137,7 @@
   flex-direction: row;
   border-radius: 5px;
   /* border: 2px solid rgb(177, 40, 113); */
+  background-color: white;
   box-shadow: rgba(177, 40, 113, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   width: 100%;
   padding: 5px;
@@ -149,11 +158,11 @@
   padding-left: 10px;
   color: rgb(188, 80, 212);
   font-family: "Fredoka One", cursive;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .nav-menu {
   /* border: 2px solid black; */
-  margin-top: 40px;
+  margin-top: 30px;
   flex-grow: 5;
   padding: 30px;
   box-sizing: border-box;
@@ -176,7 +185,7 @@ dl > dt > a {
   font-weight: 100;
   font-size: 1rem;
   text-decoration: none;
-  color: rgb(77, 75, 75);
+  color: black;
   padding-left: 30px;
 }
 
@@ -186,18 +195,28 @@ dl > dt > a:hover {
 
 .footer-dashboard {
   /* border: 2px solid rgb(86, 4, 4); */
-  margin-top: 15px;
   flex-grow: 3;
   width: 100%;
+  background-color: white;
 }
-.dashboard-component {
+.component-main {
   border: 2px solid black;
   flex-grow: 7;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 #notes {
   display: flex;
   flex-direction: column;
+  box-shadow: 0 -5px 5px -5px #333;
+}
+#notif-notes {
+  /* border: 2px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 #notif-notes > button {
@@ -254,6 +273,9 @@ dl > dt > a:hover {
   /* border: 2px solid black; */
   width: 260px;
 }
+.section-notes > button {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
 
 .nav-menu {
   display: flex;
@@ -286,6 +308,43 @@ dl > dt > a:hover {
 }
 
 /* CSS Dashboard End */
+/* CSS panel-dashboard */
+.panel-dashboard {
+  width: 100%;
+  margin: 30px auto;
+  /* border: 2px solid black; */
+  /* padding: 20px; */
+}
+#admin-board {
+  margin: 60px auto;
+  /* border: 2px solid black; */
+  padding: 30px;
+  width: 95%;
+  box-sizing: border-box;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: rgb(246, 219, 190);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#admin-board > h5 {
+  font-size: 1.6rem;
+  padding-left: 20px;
+}
+#admin-board > h5 > span {
+  font-size: 2rem;
+}
+.imge {
+  border: 2px solid black;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 50px;
+  top: -60px;
+}
+
+/* CSS panel-dashboard End */
 
 @media only screen and (max-width: 600px) {
   .form-login {
@@ -348,10 +407,32 @@ dl > dt > a:hover {
   }
   .header-dashboard {
     margin-top: -30px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    box-shadow: rgba(124, 26, 120, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   }
   .nav-menu {
     position: static;
-    margin-top: -5px;
+    margin: -1px auto;
+    z-index: 1;
+    border-radius: 2px;
+    background-color: white;
+    width: 99%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .component-main {
+    margin-top: 80px;
+    z-index: 0;
+    position: absolute;
+    /* height: 300px;
+    width: 100%; */
+  }
+  .side-left {
+    background-color: white;
+  }
+  .dashboard-main {
+    border: none;
+  }
+  .side-right {
+    display: none;
   }
 }
