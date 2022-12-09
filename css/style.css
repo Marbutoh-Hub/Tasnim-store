@@ -183,10 +183,11 @@ dl > dt {
 dl > dt > a {
   font-family: "Fredoka One", cursive;
   font-weight: 100;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   text-decoration: none;
   color: black;
   padding-left: 30px;
+  font-weight: 300;
 }
 
 dl > dt > a:hover {
@@ -325,7 +326,7 @@ dl > dt > a:hover {
   display: flex;
   flex-direction: row;
   position: relative;
-  background-color: rgb(246, 219, 190);
+  background-color: rgb(220, 221, 250);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 #admin-board > h5 {
@@ -336,12 +337,12 @@ dl > dt > a:hover {
   font-size: 2rem;
 }
 .imge {
-  border: 2px solid black;
-  width: 150px;
-  height: 150px;
+  /* border: 2px solid black; */
+  width: 170px;
+  height: 170px;
   position: absolute;
-  right: 50px;
-  top: -60px;
+  right: 30px;
+  top: -70px;
 }
 
 /* CSS panel-dashboard End */
