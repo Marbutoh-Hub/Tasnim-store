@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Sorts+Mill+Goudy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sniglet&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Roboto:wght@300&family=Sniglet&display=swap");
 
 * {
   margin-top: 0;
@@ -9,7 +12,7 @@
 
 #main-container {
   /* border: 2px solid black; */
-  margin: 1px 2px;
+  margin: 2px 2px;
   /* padding: 10px; */
 }
 body {
@@ -109,19 +112,19 @@ body {
 .dashboard-main {
   display: flex;
   flex-direction: row;
+  /* border: 2px solid black; */
   /* background-color: rgb(198, 109, 225); */
   /* border: 2px solid black; */
 }
 
 .side-left {
   /* border: 2px solid black; */
-  /* height: 500px; */
-  /* flex-grow: 0.3; */
-  background-color: rgba(11, 16, 147, 0.197);
+  /* background-color: rgba(11, 16, 147, 0.197);
+   */
+  background-color: #6a5acd;
   display: flex;
   flex-direction: column;
   border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 .icon-dashboard {
@@ -162,7 +165,7 @@ body {
 }
 .nav-menu {
   /* border: 2px solid black; */
-  margin-top: 30px;
+  margin-top: 20px;
   flex-grow: 5;
   padding: 30px;
   box-sizing: border-box;
@@ -181,11 +184,12 @@ dl > dt {
   padding-bottom: 20px;
 }
 dl > dt > a {
-  font-family: "Fredoka One", cursive;
+  /* font-family: "Fredoka One", cursive; */
+  font-family: "Sniglet", cursive;
   font-weight: 100;
   /* font-size: 1rem; */
   text-decoration: none;
-  color: black;
+  color: whitesmoke;
   padding-left: 30px;
   font-weight: 300;
 }
@@ -201,7 +205,8 @@ dl > dt > a:hover {
   background-color: white;
 }
 .component-main {
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  box-shadow: rgba(205, 234, 181, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   flex-grow: 7;
   border-radius: 18px;
   display: flex;
@@ -214,6 +219,7 @@ dl > dt > a:hover {
   display: flex;
   flex-direction: column;
   box-shadow: 0 -5px 5px -5px #333;
+  margin-top: 0px;
 }
 #notif-notes {
   /* border: 2px solid black; */
@@ -311,13 +317,12 @@ dl > dt > a:hover {
 /* CSS Dashboard End */
 /* CSS panel-dashboard */
 .panel-dashboard {
-  width: 100%;
-  margin: 30px auto;
+  width: 95%;
+  margin: 10px auto;
   /* border: 2px solid black; */
-  /* padding: 20px; */
 }
 #admin-board {
-  margin: 60px auto;
+  margin: 60px auto 25px;
   /* border: 2px solid black; */
   padding: 30px;
   width: 95%;
@@ -332,9 +337,13 @@ dl > dt > a:hover {
 #admin-board > h5 {
   font-size: 1.6rem;
   padding-left: 20px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(149, 118, 80);
 }
 #admin-board > h5 > span {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-family: "Mochiy Pop P One", sans-serif;
+  color: rgb(70, 41, 5);
 }
 .imge {
   /* border: 2px solid black; */
@@ -345,9 +354,91 @@ dl > dt > a:hover {
   top: -70px;
 }
 
+#info-all-transaction {
+  /* border: 2px solid black; */
+  margin: 2px auto;
+  display: flex;
+  flex-direction: row;
+  width: 98%;
+  justify-content: space-between;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+#info-all-transaction > div {
+  /* border: 2px solid black; */
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  flex-grow: 2;
+  margin: 10px 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.icon-transction {
+  width: 45px;
+  height: 45px;
+  margin: 5px auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#drawer-icon-transaction {
+  height: 50px;
+  margin-bottom: 3px;
+  background-color: rgb(238, 234, 245);
+}
+.drawer-info-transaction {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.card-all-penjualan {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(105, 164, 79);
+  color: white;
+}
+.card-all-customer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(87, 41, 21);
+  color: white;
+}
+.card-all-pendapatan {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(181, 156, 81);
+  color: white;
+}
+
+#recent-transaction {
+  margin-top: 40px;
+  /* background-color: rgb(196, 208, 246); */
+  /* border: 1px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+#recent-transaction-header {
+  color: rgb(83, 26, 206);
+}
+
+#mobile-menu-cover {
+  display: none;
+}
+#show-recent-transaction {
+  display: none;
+}
+#hide-recent-transaction {
+  display: none;
+}
+
 /* CSS panel-dashboard End */
 
 @media only screen and (max-width: 600px) {
+  body {
+    overflow-y: auto;
+  }
   .form-login {
     width: 100%;
     margin: 10px auto;
@@ -415,7 +506,7 @@ dl > dt > a:hover {
     margin: -1px auto;
     z-index: 1;
     border-radius: 2px;
-    background-color: white;
+    background-color: #6a5acd;
     width: 99%;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   }
@@ -435,5 +526,57 @@ dl > dt > a:hover {
   }
   .side-right {
     display: none;
+  }
+  #info-all-transaction {
+    /* border: 2px solid black; */
+    margin: 2px auto;
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    justify-content: space-between;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  .component-main {
+    width: 98%;
+    border: none;
+  }
+  #admin-board {
+    width: 85%;
+  }
+  #admin-board > h5 {
+    margin-left: -30px;
+    font-size: 15px;
+  }
+  #admin-board > h5 > span {
+    font-size: 15px;
+  }
+  .imge {
+    right: -35px;
+  }
+  #mobile-menu-cover {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.5px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
+  #recent-transaction {
+    display: none;
+  }
+  #show-recent-transaction {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    transition: 2deg;
+  }
+  #hide-recent-transaction {
+    display: none;
+    padding: 5px;
+    text-align: center;
   }
 }
