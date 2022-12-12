@@ -56,19 +56,19 @@
                     </div>
                     <div class="list-group" id="notif-notes">
                         <button type="button" class="list-group-item list-group-item-action">
-                            A second item
+                            03-Desember-2022
                             <span class="notif-notes">
                                 <img src="icon/notif-icon.svg" alt="">
                             </span>
                         </button>
                         <button type="button" class="list-group-item list-group-item-action">
-                            A second item 2
+                            02-Desember-2022
                             <span class="notif-notes">
                                 <img src="icon/icon-check-notif.svg" alt="">
                             </span>
                         </button>
                         <button type="button" class="list-group-item list-group-item-action">
-                            A third button item
+                            01-Desember-2022
                             <span class="notif-notes">
                                 <img src="icon/icon-check-notif.svg" alt="">
                             </span>
@@ -79,7 +79,24 @@
         </div>
         <div class="component-main">
         </div>
-        <div class="side-right" style="background-color:#6A5ACD;">
+        <div class="side-right">
+            <div id="notifikasi">
+                <span><img src="icon/icon-notifikasi-alert.svg" class="icon" alt=""></span>
+                <span><img src="icon/icon-massage-alert.svg" class="icon" alt=""></span>
+            </div>
+            <div id="poto-profile">
+                <div id="drawer-profile">
+                    <span id="profile">
+                        <img src="icon/icon-user-profile.svg" id="pp" alt="">
+                    </span>
+                    <span id="name-tag">
+                        <span class="badge bg-light text-dark mt-2">Aji Pramadana</span>
+                    </span>
+                </div>
+                <span id="settings">
+                    <img src="icon/icon-settings.svg" class="icon mt-2" alt="">
+                </span>
+            </div>
         </div>
     </div>
 </div>
