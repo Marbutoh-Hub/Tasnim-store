@@ -91,11 +91,21 @@
                     </span>
                     <span id="name-tag">
                         <span class="badge bg-light text-dark mt-2">Aji Pramadana</span>
+                        <span id="status-online">
+                            <img src="icon/icon-online.svg" class="label-online" alt="">
+                            <p> Online</p>
+                        </span>
                     </span>
                 </div>
                 <span id="settings">
                     <img src="icon/icon-settings.svg" class="icon mt-2" alt="">
                 </span>
+            </div>
+            <div id="personal-menu">
+                <div id="marketing">
+                    <img src="icon/icon-marketing.svg" class="icon-target" alt="">
+                    <span>Target</span>
+                </div>
             </div>
         </div>
     </div>

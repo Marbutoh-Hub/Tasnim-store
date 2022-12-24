@@ -15,8 +15,6 @@
 <body>
   <div id="main-container">
   </div>
-
-
   <script>
     $(document).ready(function() {
       $("title").text('Login Tasnim Store')
