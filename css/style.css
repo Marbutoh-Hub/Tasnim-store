@@ -274,7 +274,7 @@ dl > dt > a:hover {
 }
 
 .side-right {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   flex-grow: 3;
   background-color: #6a5acd;
   width: 40px;
@@ -297,14 +297,26 @@ dl > dt > a:hover {
   margin-left: 10px;
 }
 #marketing {
+  border: 2px solid rgb(239, 216, 193);
   display: flex;
   flex-direction: row;
+  border-radius: 5px;
+  padding: 3px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
 }
 #marketing > span {
   margin-left: 8px;
   font-family: "Sniglet", cursive;
   margin-top: 2px;
   color: rgb(251, 247, 243);
+}
+#my-customer > span {
+  margin-left: 3px;
+  font-family: "Sniglet", cursive;
+  margin-top: 5px;
+  color: rgb(251, 247, 243);
+  font-size: 0.8rem;
 }
 #poto-profile {
   /* border: 2px solid black; */
@@ -349,14 +361,12 @@ dl > dt > a:hover {
 }
 
 #personal-menu {
-  border: 2px solid rgb(239, 216, 193);
-  border-radius: 5px;
+  /* border: 2px solid rgb(239, 216, 193); */
+  /* border-radius: 5px; */
   width: 90%;
   margin: 30px auto;
-  padding: 3px;
-  box-sizing: border-box;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
   /* background-color: rgb(239, 216, 193); */
 }
@@ -365,6 +375,88 @@ dl > dt > a:hover {
   height: 30px;
   /* border: 2px solid black; */
   box-sizing: border-box;
+}
+
+#line-mycustomer {
+  margin-top: 5px;
+  width: 70%;
+  border: 2px solid whitesmoke;
+  background-color: bisque;
+  margin-left: 13px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#list-mycustomer {
+  margin-top: 10px;
+  border: 2px solid rgb(76, 68, 228);
+  border-radius: 5px;
+  overflow-y: scroll;
+  max-height: 250px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.icon-mycustomer {
+  width: 30px;
+  height: 25px;
+  margin-left: 10px;
+  /* border: 2px solid black; */
+  box-sizing: border-box;
+}
+
+#logout {
+  background-color: aliceblue;
+  width: 80px;
+  /* border: 2px solid rgb(30, 16, 136); */
+  top: 640px;
+  right: 30px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  /* background-color: aliceblue; */
+}
+
+.icon-logout {
+  width: 30px;
+  height: 25px;
+  /* border: 2px solid black; */
+  box-sizing: border-box;
+  transform: rotate(180deg);
+}
+
+#logout > span {
+  font-family: "Sniglet", cursive;
+  margin-top: 4px;
+  font-size: 0.8rem;
+  color: rgb(25, 7, 66);
+}
+#logout > span > a {
+  text-decoration: none;
+  color: rgb(25, 7, 66);
 }
 /* CSS SIDE RIGHT END */
 .section-notes {

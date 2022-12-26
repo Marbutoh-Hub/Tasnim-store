@@ -106,6 +106,35 @@
                     <img src="icon/icon-marketing.svg" class="icon-target" alt="">
                     <span>Target</span>
                 </div>
+                <div id="my-customer">
+                    <img src="icon/icon-mycustomer.svg" class="icon-mycustomer" alt="">
+                    <span>My Customer</span>
+                </div>
+                <span id="line-mycustomer"></span>
+                <div id="list-mycustomer">
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Cras justo odio</li>
+                    </ol>
+                </div>
+                <div id="logout">
+                    <span>
+                        <a href="">
+                            Logout
+                        </a>
+                    </span>
+                    <img src="icon/icon-logout.svg" class="icon-logout" alt="">
+                </div>
             </div>
         </div>
     </div>
