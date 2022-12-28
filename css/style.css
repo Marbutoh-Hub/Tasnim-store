@@ -273,6 +273,23 @@ dl > dt > a:hover {
   flex-direction: column;
   align-items: center;
 }
+
+#settings-modal {
+  top: 0;
+  left: 0;
+  /* border: 6px solid black; */
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon-profile {
+  width: 150px;
+  height: 150px;
+}
 .bodynotes {
   width: 700px;
 }

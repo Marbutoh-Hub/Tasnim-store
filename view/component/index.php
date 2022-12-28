@@ -98,7 +98,9 @@
                     </span>
                 </div>
                 <span id="settings">
-                    <img src="icon/icon-settings.svg" class="icon mt-2" alt="">
+                    <a href="" id="anchor-setting">
+                        <img src="icon/icon-settings.svg" class="icon mt-2" alt="">
+                    </a>
                 </span>
             </div>
             <div id="personal-menu">
@@ -198,7 +200,7 @@
 <div id="marketing-info">
     <div class="card bodynotes border-primary mt-4">
         <div class="card-header">
-            Statistic Of My Sales
+            My Sales
             <button type="button" class="btn-close position-absolute top-1" id="exit-market" style="right: 10px;"></button>
         </div>
         <div class="card-body cardmarket text-primary">
@@ -292,6 +294,114 @@
     </div>
 </div>
 
+<!-- Modal setting -->
+<div id="settings-modal">
+    <div class="card mb-3 mt-4" style="width: 800px;">
+        <!-- <div class="alert alert-secondary mt-1" role="alert"> -->
+        <button type="button" class="btn-close position-absolute" id="exit-market" style="right: 12px; top:4px"></button>
+        <!-- </div> -->
+        <div class="row p-2">
+            <div class="col-4" style="margin-top: 39px;">
+                <div class="card p-2  border border-white" style="width: 18rem;">
+                    <div class="card-body mx-auto">
+                        <h5 class="card-title">Profile</h5>
+                    </div>
+                    <img src="icon/icon-user-profile.svg" class="icon-profile mx-auto" alt="...">
+
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="card-body" style="margin-right: 30px;">
+                    <form class="row g-3 mt-3 p-2">
+                        <div class="col-12">
+                            <label for="inputEmail4" class="form-label">Nama</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Alamat</label>
+                            <input type="text" class="form-control" id="inputAddress">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">No KTP</label>
+                            <input type="text" class="form-control" id="inputAddress2">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputCity" class="form-label">Password</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputEmail4" class="form-label">Poto profile</label>
+                            <input type="file" class="form-control" id="inputGroupFile02">
+                        </div>
+                        <div class="col-12 d-flex flex-row-reverse bd-highlight">
+                            <button type="submit" class="btn btn-primary mt-4 mb-2">Save</button>
+                            <button type="submit" class="btn btn-warning mt-4 mb-2" style="margin-right: 10px;">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- <div class="row g-0 p-2">
+            <div class="col-md-4 p-2">
+                <img src="icon/icon-user-profile.svg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Profile</h5>
+                    <form class="row g-3 mt-3">
+                        <div class="col-12">
+                            <label for="inputEmail4" class="form-label">Nama</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">State</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="inputZip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Check me out
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+</div>
+
 
 <script>
     // list dokumen ketika ready
@@ -299,6 +409,7 @@
         $('#modal-notes').hide();
         $('#list-notes').hide();
         $('#marketing-info').hide();
+        $('#settings-modal').hide();
         $("title").text('Dashboard')
         $(".component-main").load("./view/component-dashboard/index.php");
     });
@@ -381,6 +492,11 @@
     // exit market button
     $('#exit-market').click(function(e) {
         $('#marketing-info').fadeOut("slow");
+    });
+    // setting button 
+    $('#anchor-setting').click(function(e) {
+        e.preventDefault();
+        $('#settings-modal').fadeIn("slow");
     });
 
 
