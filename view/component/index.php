@@ -55,19 +55,19 @@
                         </button>
                     </div>
                     <div class="list-group" id="notif-notes">
-                        <button type="button" class="list-group-item list-group-item-action">
+                        <button type="button" class="list-group-item list-group-item-action list-n">
                             03-Desember-2022
                             <span class="notif-notes">
                                 <img src="icon/notif-icon.svg" alt="">
                             </span>
                         </button>
-                        <button type="button" class="list-group-item list-group-item-action">
+                        <button type="button" class="list-group-item list-group-item-action list-n">
                             02-Desember-2022
                             <span class="notif-notes">
                                 <img src="icon/icon-check-notif.svg" alt="">
                             </span>
                         </button>
-                        <button type="button" class="list-group-item list-group-item-action">
+                        <button type="button" class="list-group-item list-group-item-action list-n">
                             01-Desember-2022
                             <span class="notif-notes">
                                 <img src="icon/icon-check-notif.svg" alt="">
@@ -104,7 +104,7 @@
             <div id="personal-menu">
                 <div id="marketing">
                     <img src="icon/icon-marketing.svg" class="icon-target" alt="">
-                    <span>Target</span>
+                    <span><a href="" id="anchor-marketing">Target</a></span>
                 </div>
                 <div id="my-customer">
                     <img src="icon/icon-mycustomer.svg" class="icon-mycustomer" alt="">
@@ -174,11 +174,131 @@
     </div>
 </div>
 
+<!-- List notes -->
+<div id="list-notes">
+    <div class="card mt-4">
+        <div class="card-header">
+            Tanggal : 22-Des-2022
+        </div>
+        <div class="bodynotes">
+            <div class="card-body">
+                <h5 class="card-title">Janji Meeting dengan Client</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur enim distinctio natus nihil quas earum ullam voluptatibus sint debitis ut eos nostrum saepe aliquam accusantium laborum, similique doloribus! Rem, perspiciatis!</p>
+                <a href="#" class="btn btn-warning mt-3 cancel-notes">Cancel</a>
+                <a href="#" class="btn btn-secondary mt-3">Mark as read</a>
+                <span class="notif-notes">
+                    <img src="icon/notif-icon.svg" alt="" style="margin-top: 20px; margin-left: 7px;">
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- marketing modal -->
+<div id="marketing-info">
+    <div class="card bodynotes border-primary mt-4">
+        <div class="card-header">
+            Statistic Of My Sales
+            <button type="button" class="btn-close position-absolute top-1" id="exit-market" style="right: 10px;"></button>
+        </div>
+        <div class="card-body cardmarket text-primary">
+            <div class="alert alert-primary mt-3" role="alert">
+                <h5 class="card-title">Marketing Plan on Februari - 2022</h5>
+                <h6 class="card-text">120 Sales</h6>
+            </div>
+        </div>
+        <div class="card-body cardmarket text-warning" style="margin-top: -40px;">
+            <div class="alert alert-warning" role="alert">
+                <h5 class="card-title">On Track 5 Februari - 2022</h5>
+                <h6 class="card-text">20 Sales</h6>
+            </div>
+        </div>
+        <!-- stepper start -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+        <div class="container padding-bottom-3x mb-1">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="steps d-flex flex-wrap flex-sm-nowrap justify-content-between padding-top-2x padding-bottom-1x">
+                        <div class="step completed">
+                            <div class="step-icon-wrap">
+                                <div class="step-icon">1</div>
+                            </div>
+                            <h4 class="step-title">Januari</h4>
+                        </div>
+                        <div class="step completed">
+                            <div class="step-icon-wrap">
+                                <div class="step-icon">2</div>
+                            </div>
+                            <h4 class="step-title">Februari</h4>
+                        </div>
+                        <div class="step completed">
+                            <div class="step-icon-wrap">
+                                <div class="step-icon">3</div>
+                            </div>
+                            <h4 class="step-title">Maret</h4>
+                        </div>
+                        <div class="step">
+                            <div class="step-icon-wrap">
+                                <div class="step-icon">4</div>
+                            </div>
+                            <h4 class="step-title">April</h4>
+                        </div>
+                        <div class="step">
+                            <div class="step-icon-wrap">
+                                <div class="step-icon">5</div>
+                            </div>
+                            <h4 class="step-title">Mei</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- stepper end -->
+        <!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true"> -->
+        <div class="card-body cardmarket text-warning" style="margin-top: -40px;">
+            <div class="toast-header">
+                <strong class="me-auto">Perfomance</strong>
+                <small class="text-muted">just now</small>
+            </div>
+            <div class="toast-body">
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item" style="border: 2px solid black; border-radius:25px; margin-left:5px; width:45px;height:45px; background-color:#F0E68C;">
+                        <img src="icon/icon-like-thumb.svg" class="icon position-absolute top-50 start-50 translate-middle" alt="" srcset="">
+                    </li>
+                    <li class="list-group-item" style="border: 2px solid black; border-radius:25px; margin-left:5px; width:45px;height:45px; background-color:#F0E68C;">
+                        <img src="icon/icon-like-thumb.svg" class="icon position-absolute top-50 start-50 translate-middle" alt="" srcset="">
+                    </li>
+                    <li class="list-group-item" style="border: 2px solid black; border-radius:25px; margin-left:5px; width:45px;height:45px; background-color:#F0E68C;">
+                        <img src="icon/icon-like-thumb.svg" class="icon position-absolute top-50 start-50 translate-middle" alt="" srcset="">
+                    </li>
+                    <li class="list-group-item" style="border: 2px solid black; border-radius:25px; margin-left:5px; width:45px;height:45px; background-color:white;">
+                        <img src="icon/icon-like-thumb.svg" class="icon position-absolute top-50 start-50 translate-middle" alt="" srcset="">
+                    </li>
+                    <li class="list-group-item" style="border: 2px solid black; border-radius:25px; margin-left:5px; width:45px;height:45px; background-color:white;">
+                        <img src="icon/icon-like-thumb.svg" class="icon position-absolute top-50 start-50 translate-middle" alt="" srcset="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="card-body cardmarket text-danger" style="margin-top: -40px;">
+            <div class="alert alert-danger" role="alert">
+                <h5 class="card-title">On Track 29 Februari - 2022</h5>
+                <h6 class="card-text">20 Sales</h6>
+            </div>
+        </div> -->
+
+    </div>
+</div>
+
 
 <script>
     // list dokumen ketika ready
     $(document).ready(function() {
         $('#modal-notes').hide();
+        $('#list-notes').hide();
+        $('#marketing-info').hide();
         $("title").text('Dashboard')
         $(".component-main").load("./view/component-dashboard/index.php");
     });
@@ -244,6 +364,25 @@
     $('#cancel-modal').click(function() {
         $('#modal-notes').fadeOut("slow");
     });
+
+    // modal list notes
+    $('.list-n').click(function() {
+        $('#list-notes').fadeIn("slow");
+    });
+    $('.cancel-notes').click(function() {
+        $('#list-notes').fadeOut("slow");
+    });
+
+    // modal marketing
+    $('#anchor-marketing').click(function(e) {
+        e.preventDefault();
+        $('#marketing-info').fadeIn("slow");
+    });
+    // exit market button
+    $('#exit-market').click(function(e) {
+        $('#marketing-info').fadeOut("slow");
+    });
+
 
     // javascript mobile mode
     $('#burger-on').on('click', function() {
