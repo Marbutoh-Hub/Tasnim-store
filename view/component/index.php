@@ -81,8 +81,16 @@
         </div>
         <div class="side-right">
             <div id="notifikasi">
-                <span><img src="icon/icon-notifikasi-alert.svg" class="icon" alt=""></span>
-                <span><img src="icon/icon-massage-alert.svg" class="icon" alt=""></span>
+                <span>
+                    <a href="" id="anchor-notalert">
+                        <img src="icon/icon-notifikasi-alert.svg" class="icon" alt="">
+                    </a>
+                </span>
+                <span>
+                    <a href="" id="anchor-messalert">
+                        <img src="icon/icon-massage-alert.svg" class="icon" alt="">
+                    </a>
+                </span>
             </div>
             <div id="poto-profile">
                 <div id="drawer-profile">
@@ -297,9 +305,7 @@
 <!-- Modal setting -->
 <div id="settings-modal">
     <div class="card mb-3 mt-4" style="width: 800px;">
-        <!-- <div class="alert alert-secondary mt-1" role="alert"> -->
-        <button type="button" class="btn-close position-absolute" id="exit-market" style="right: 12px; top:4px"></button>
-        <!-- </div> -->
+        <button type="button" class="btn-close position-absolute" id="exit-setting" style="right: 12px; top:4px"></button>
         <div class="row p-2">
             <div class="col-4" style="margin-top: 39px;">
                 <div class="card p-2  border border-white" style="width: 18rem;">
@@ -314,24 +320,28 @@
                 <div class="card-body" style="margin-right: 30px;">
                     <form class="row g-3 mt-3 p-2">
                         <div class="col-12">
-                            <label for="inputEmail4" class="form-label">Nama</label>
-                            <input type="email" class="form-control" id="inputEmail4">
+                            <label for="nama" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="nama">
                         </div>
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Alamat</label>
-                            <input type="text" class="form-control" id="inputAddress">
+                            <label for="alamat" class="form-label">Alamat</label>
+                            <input type="text" class="form-control" id="alamat">
                         </div>
                         <div class="col-12">
-                            <label for="inputAddress2" class="form-label">No KTP</label>
-                            <input type="text" class="form-control" id="inputAddress2">
+                            <label for="no_ktp" class="form-label">No KTP</label>
+                            <input type="number" class="form-control" id="no_ktp">
                         </div>
                         <div class="col-12">
-                            <label for="inputCity" class="form-label">Password</label>
-                            <input type="text" class="form-control" id="inputCity">
+                            <label for="no_tlp" class="form-label">No Telepone</label>
+                            <input type="number" class="form-control" id="no_tlp">
                         </div>
                         <div class="col-12">
-                            <label for="inputEmail4" class="form-label">Poto profile</label>
-                            <input type="file" class="form-control" id="inputGroupFile02">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                        <div class="col-12">
+                            <label for="potoprofile" class="form-label">Poto profile</label>
+                            <input type="file" class="form-control" id="potoprofile">
                         </div>
                         <div class="col-12 d-flex flex-row-reverse bd-highlight">
                             <button type="submit" class="btn btn-primary mt-4 mb-2">Save</button>
@@ -341,65 +351,94 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-        <!-- <div class="row g-0 p-2">
-            <div class="col-md-4 p-2">
-                <img src="icon/icon-user-profile.svg" class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">Profile</h5>
-                    <form class="row g-3 mt-3">
-                        <div class="col-12">
-                            <label for="inputEmail4" class="form-label">Nama</label>
-                            <input type="email" class="form-control" id="inputEmail4">
-                        </div>
-                        <div class="col-12">
-                            <label for="inputAddress" class="form-label">Address</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                        </div>
-                        <div class="col-12">
-                            <label for="inputAddress2" class="form-label">Address 2</label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="inputCity" class="form-label">City</label>
-                            <input type="text" class="form-control" id="inputCity">
-                        </div>
-                        <div class="col-md-4">
-                            <label for="inputState" class="form-label">State</label>
-                            <select id="inputState" class="form-select">
-                                <option selected>Choose...</option>
-                                <option>...</option>
-                            </select>
-                        </div>
-                        <div class="col-md-2">
-                            <label for="inputZip" class="form-label">Zip</label>
-                            <input type="text" class="form-control" id="inputZip">
-                        </div>
-                        <div class="col-12">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                <label class="form-check-label" for="gridCheck">
-                                    Check me out
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <button type="submit" class="btn btn-primary">Sign in</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div> -->
     </div>
 
+</div>
+
+<!-- modal-notif-alert -->
+<div id="notifalert-modal">
+    <div class="card position-absolute notif-card p-1 border border-4" style="width: 18rem; right:59px; top:45px">
+        <ul class="list-group list-group-flush">
+            <button type="button" class="list-group-item list-group-item-action  border border-0">
+                item
+                <span class="position-absolute translate-middle p-2 bg-danger border border-light rounded-circle" style="top: 15px; right:3px">
+            </button>
+            <button type="button" class="list-group-item list-group-item-action  border border-0">item</button>
+            <button type="button" class="list-group-item list-group-item-action  border border-0">item</button>
+            <button type="button" class="list-group-item list-group-item-action  border border-0">item</button>
+            <button type="button" class="list-group-item list-group-item-action  border border-0">item</button>
+            <button type="button" class="list-group-item list-group-item-action  border border-0">item</button>
+            <button type="button" class="list-group-item list-group-item-action  border border-0">item</button>
+            <button type="button" class="list-group-item list-group-item-action  border border-0">item</button>
+            <button type="button" class="list-group-item list-group-item-action  border border-0">item</button>
+            <button type="button" class="list-group-item list-group-item-action  border border-0">item</button>
+            <button type="button" class="list-group-item list-group-item-action  border border-0">item</button>
+            <button type="button" class="list-group-item list-group-item-action  border border-0">item</button>
+            <button type="button" class="list-group-item list-group-item-action  border border-0">item</button>
+        </ul>
+    </div>
+</div>
+
+<!-- Modal Message alert -->
+<div id="messagealert-modal">
+    <div class="card position-absolute p-1 border border-2" style="width: 50rem; right:20px; top:45px">
+        <div class="card-header">
+            Message
+        </div>
+        <div class="card-body">
+            <div class="row row-cols-auto">
+                <div class="col border border-3 drawer-message" style="padding-right: 20px; padding-bottom:40px">
+                    <ul class="list-group mt-3 mb-3 list-message">
+                        <li class="list-group-item border border-0">
+                            <div class="btn-group border border-2 p-2" id="div-cmessage" role="group" aria-label="Third group" style="border-radius:25px;">
+                                <a href="">
+                                    <img src="icon/icon-create-messa.svg" id="on-create-message" style="width: 28px; height:28px; " alt="">
+                                </a>
+                            </div>
+                            +Create
+                        </li>
+                        <li class=" list-group-item border border-0">
+                            <div class="btn-group border border-0 p-1" id="list-inbox" role="group" aria-label="Third group" style="width: 150px; border-radius:10px;">
+                                <a href="">
+                                    <img src="icon/icon-inbox-massage.svg" id="on-inbox-message" style="width: 20px; height:20px" alt="">
+                                </a>
+                                <span class="border border-0" style="margin-left:10px">
+                                    <button class="border border-0 list-inbox" style="background-color: white;">
+                                        inbox
+                                    </button>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="list-group-item border border-0">
+                            <div class="btn-group border border-0 p-1" role="group" id="list-send" aria-label="Third group" style="width: 150px; border-radius:10px;">
+                                <a href="">
+                                    <img src="icon/icon-send-message.svg" id="on-send-message" style="width: 20px; height:20px" alt="">
+                                </a>
+                                <span class="border border-0" style="margin-left:10px">
+                                    <button class="border border-0 list-send" style="background-color: white;">
+                                        send
+                                    </button>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="list-group-item border border-0">
+                            <div class="btn-group border border-0 p-1" role="group" id="list-draft" aria-label="Third group" style="width: 150px; border-radius:10px;">
+                                <a href="">
+                                    <img src="icon/icon-draft-massage.svg" id="on-draft-message" style="width: 20px; height:20px" alt="">
+                                </a>
+                                <span class="border border-0 " style="margin-left:10px">
+                                    <button class="border border-0 list-draft" style="background-color: white;">
+                                        draft
+                                    </button>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">.col-md-8</div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
@@ -410,6 +449,8 @@
         $('#list-notes').hide();
         $('#marketing-info').hide();
         $('#settings-modal').hide();
+        $('#notifalert-modal').hide();
+        $('#messagealert-modal').hide();
         $("title").text('Dashboard')
         $(".component-main").load("./view/component-dashboard/index.php");
     });
@@ -498,6 +539,60 @@
         e.preventDefault();
         $('#settings-modal').fadeIn("slow");
     });
+    // exit button setting
+    $('#exit-setting').click(function(e) {
+        $('#settings-modal').fadeOut("slow");
+    });
+    // button notif alert
+    $('#anchor-notalert').click(function(e) {
+        e.preventDefault();
+        $('#notifalert-modal').fadeIn("slow");
+    });
+    // notifalert modal event di click
+    $('#notifalert-modal').click(function() {
+        $('#notifalert-modal').fadeOut("slow");
+    })
+    // button message alert 
+    $('#anchor-messalert').click(function(e) {
+        e.preventDefault();
+        $('#messagealert-modal').fadeIn("slow");
+    });
+    $('#on-create-message').hover(function() {
+        $('#div-cmessage').css('background-color', '#808080')
+    });
+    $('#on-create-message').mouseout(function() {
+        $('#div-cmessage').css('background-color', 'white')
+    });
+    // list message ketika di hover
+    $('.list-message li div').hover(function() {
+        a = $('.list-message li div span a');
+        list = $('.list-message li div');
+        for (let index = 0; index < list.length; index++) {
+            select = $(this).attr('id');
+            if (list[index].id === select) {
+                $('#' + select).removeClass('border-0').addClass('border-1');
+                $('#' + select).css('background-color', '#E0FFFF')
+                $('.' + select).css('background-color', '#E0FFFF')
+            }
+        }
+        for (let index = 0; index < list.length; index++) {
+            if (list[index].id !== select) {
+                $('#' + list[index].id).removeClass('border-1').addClass('border-0');
+                $('#' + list[index].id).css('background-color', 'white');
+            }
+            $anchor_class = select.split("-");
+            console.log($anchor_class[1])
+        }
+    })
+
+    $('.list-message li div').mouseleave(function() {
+        select = $(this).attr('id');
+        $('#' + select).removeClass('border-1').addClass('border-0');
+        $('#' + select).css('background-color', 'white');
+        $('.' + select).css('background-color', 'white');
+    })
+
+
 
 
     // javascript mobile mode

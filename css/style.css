@@ -273,8 +273,32 @@ dl > dt > a:hover {
   flex-direction: column;
   align-items: center;
 }
+#notifalert-modal {
+  top: 0;
+  left: 0;
+  /* border: 6px solid black; */
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 #settings-modal {
+  top: 0;
+  left: 0;
+  /* border: 6px solid black; */
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#messagealert-modal {
   top: 0;
   left: 0;
   /* border: 6px solid black; */
@@ -589,7 +613,14 @@ dl > dt > a:hover {
   color: #fff;
 }
 
-/* stepper */
+.notif-card {
+  overflow-y: scroll;
+  max-height: 130px;
+}
+
+.activ {
+  background-color: #40606e;
+}
 
 /* CSS SIDE RIGHT END */
 .section-notes {
